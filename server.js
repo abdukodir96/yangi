@@ -11,14 +11,16 @@ app.use(express.urlencoded({ extended: true }));
 // 2: session code
 // 3: view ga bog'liq codelar
 app.set("views", "views");
-app.set("views engine", "ejs");
+app.set("view engine", "ejs");
 
 // 4: Routing code
-app.get("/hello", function (req, res) {
-  res.end(`<h1 style="background: yellow">Hello world by Leo</h1>`);
+app.post("/create-item", (req, res) => {
+  console.log(req.body);
+  res.json({ test: "success" });
 });
-app.get("/gift", function (req, res) {
-  res.end("<h1> siz sovgalar bolimidasiz</h1>");
+
+app.get("/", function (req, res) {
+  res.render("harid");
 });
 
 const server = http.createServer(app);
