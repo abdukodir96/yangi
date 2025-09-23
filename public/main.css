@@ -120,8 +120,11 @@
   flex-shrink: 0;
   border-radius: 50%;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
 }
-
+.left_1 .left-icons .iconcha:hover {
+  transform: scale(1.6);
+}
 .left_1 .left-icons .iconcha2 {
   position: relative;
   width: 28.986px;
@@ -130,6 +133,10 @@
   border-radius: 50%;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   margin-top: 4px;
+  cursor: pointer;
+}
+.left_1 .left-icons .iconcha2:hover {
+  transform: scale(1.6);
 }
 
 .left_frame .marginer {
@@ -370,6 +377,11 @@
   border-color: #ffb400;
   box-shadow: none;
   background: var(--Yellow, #ffb400);
+
+  cursor: pointer;
+}
+.midd_frame .midd_top .yell_b:hover {
+  transform: scale(1.1);
 }
 
 .midd_frame .midd_top .yell_b img {
@@ -510,6 +522,10 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 26px;
+  cursor: pointer;
+}
+.main_frame .midd_bot .info_box:hover {
+  transform: scale(1.1);
 }
 
 .main_frame .midd_bot .info_box .box_img {
@@ -567,6 +583,10 @@
   height: 30px;
   flex-shrink: 0;
   margin: 50px 39px 0 39px;
+  cursor: pointer;
+}
+.main_frame .right_frame .night:hover {
+  transform: scale(1.5);
 }
 .main_frame .right_frame .r-icons {
   display: flex;
@@ -581,6 +601,10 @@
   height: 40px;
   flex-shrink: 0;
   margin-bottom: 43px;
+  cursor: pointer;
+}
+.main_frame .right_frame .r-icons .img-i:hover {
+  transform: scale(1.5);
 }
 
 .main_frame .right_frame .r-icons .home {
@@ -588,4 +612,8 @@
   height: 78px;
   flex-shrink: 0;
   margin-bottom: 43px;
+  cursor: pointer;
+}
+.main_frame .right_frame .r-icons .home:hover {
+  transform: scale(1.2);
 }
