@@ -1,17 +1,37 @@
-//A-TASK
-
-let howmuch;
-
-function countLetter(letter, word) {
-  if ((howmuch = word.split(letter).length - 1)) {
-    console.log(howmuch);
+// DEFINE
+function qoldiqliBolish(a, b, callback) {
+  if (b === 0) {
+    callback("Mahraj nolga teng emas!", null);
   } else {
-    console.log("bunday harf mavjud emas");
+    const c = a % b;
+    callback(null, c);
   }
 }
 
-countLetter("i", "zigzag");
-console.log("----------------------");
+// CALL
+qoldiqliBolish(7, 5, (err, data) => {
+  if (err) {
+    console.log("ERROR:", err);
+  } else {
+    console.log("data:", data);
+    console.log("MANTIQLAR...");
+  }
+});
+
+//A-TASK
+
+// let howmuch;
+
+// function countLetter(letter, word) {
+//   if ((howmuch = word.split(letter).length - 1)) {
+//     console.log(howmuch);
+//   } else {
+//     console.log("bunday harf mavjud emas");
+//   }
+// }
+
+// countLetter("i", "zigzag");
+// console.log("----------------------");
 
 // console.log("Jack Ma maslahatlari");
 // const list = [
