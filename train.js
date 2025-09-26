@@ -1,22 +1,18 @@
-// DEFINE
-function qoldiqliBolish(a, b, callback) {
-  if (b === 0) {
-    callback("Mahraj nolga teng emas!", null);
+// B - task
+
+function countDigitals(text) {
+  if ((howmuch = text.match(/\d/g))) {
+    // (/\w/g) - bu har bir simbolni ushlab berarkan
+    // (/\w.(s)/g) - bu 's' harfini ushlab beryabti
+    // (/\D/g)  - bu har bir harf larni ushlab beryabti
+    // (/\d+/g)  - bu har bir son larni ushlab beryabti (raqamlarni emas)
+    console.log(howmuch.length);
   } else {
-    const c = a % b;
-    callback(null, c);
+    console.log("bu textda raqamlar qatnashmagan.");
   }
 }
 
-// CALL
-qoldiqliBolish(7, 5, (err, data) => {
-  if (err) {
-    console.log("ERROR:", err);
-  } else {
-    console.log("data:", data);
-    console.log("MANTIQLAR...");
-  }
-});
+countDigitals("as87ds87dsf78asd78");
 
 //A-TASK
 
@@ -32,6 +28,26 @@ qoldiqliBolish(7, 5, (err, data) => {
 
 // countLetter("i", "zigzag");
 // console.log("----------------------");
+
+// // DEFINE
+// function qoldiqliBolish(a, b, callback) {
+//   if (b === 0) {
+//     callback("Mahraj nolga teng emas!", null);
+//   } else {
+//     const c = a % b;
+//     callback(null, c);
+//   }
+// }
+
+// // CALL
+// qoldiqliBolish(7, 5, (err, data) => {
+//   if (err) {
+//     console.log("ERROR:", err);
+//   } else {
+//     console.log("data:", data);
+//     console.log("MANTIQLAR...");
+//   }
+// });
 
 // console.log("Jack Ma maslahatlari");
 // const list = [
