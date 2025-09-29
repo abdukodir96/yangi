@@ -1,3 +1,14 @@
+// TASK C:
+function checkContent(a, b) {
+  return a.toLowerCase().split("").sort().join("") === 
+         b.toLowerCase().split("").sort().join("");
+}
+
+console.log(checkContent("alex", "elax")); 
+console.log(checkContent("mit", "imt"));
+console.log(checkContent("group", "rtsgd"));
+
+// Task - B
 // DEFINE
 function qoldiqliBolish(a, b, callback) {
   if (b === 0) {
