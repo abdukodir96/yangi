@@ -1,15 +1,35 @@
-// TASK C:
+// Task D:
 function checkContent(a, b) {
-  return a.toLowerCase().split("").sort().join("") === 
-         b.toLowerCase().split("").sort().join("");
+  return a
+  .split('')
+  .sort()
+  .join('') === b.split('')
+  .sort()
+  .join('');
 }
 
-console.log(checkContent("alex", "elax")); 
-console.log(checkContent("mit", "imt"));
-console.log(checkContent("group", "rtsgd"));
+console.log(checkContent("mitgroup", "gmtiprou"));
+console.log(checkContent("hello", "olleh"));      
+console.log(checkContent("abc", "abd")); 
+console.log(checkContent("abdukodir", "ridokudba"));        
+
+
+
+
+// TASK C:
+// function checkContent(a, b) {
+//   return a.toLowerCase().split("").sort().join("") === 
+//          b.toLowerCase().split("").sort().join("");
+// }
+
+// console.log(checkContent("alex", "elax")); 
+// console.log(checkContent("mit", "imt"));
+// console.log(checkContent("group", "rtsgd"));
+
 
 // Task - B
 // DEFINE
+/*
 function qoldiqliBolish(a, b, callback) {
   if (b === 0) {
     callback("Mahraj nolga teng emas!", null);
@@ -28,7 +48,7 @@ qoldiqliBolish(7, 5, (err, data) => {
     console.log("MANTIQLAR...");
   }
 });
-
+*/
 
 
 
