@@ -4,7 +4,7 @@ const res = require("express/lib/response");
 const app = express();
 
 // MongoDB connecting
-const db = require("./server").db(); 
+const db = require("./server").db();
 const mongodb = require("mongodb");
              
 // 1: Kirish code  

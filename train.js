@@ -1,17 +1,26 @@
-// Task D:
-function checkContent(a, b) {
-  return a
-  .split('')
-  .sort()
-  .join('') === b.split('')
-  .sort()
-  .join('');
+// TASK E
+function reverseString(a) {
+  return a.split("").reverse().join("");
 }
 
-console.log(checkContent("mitgroup", "gmtiprou"));
-console.log(checkContent("hello", "olleh"));      
-console.log(checkContent("abc", "abd")); 
-console.log(checkContent("abdukodir", "ridokudba"));        
+console.log(reverseString("hello")); 
+console.log(reverseString("ridokudba")); 
+
+
+// Task D:
+// function checkContent(a, b) {
+//   return a
+//   .split('')
+//   .sort()
+//   .join('') === b.split('')
+//   .sort()
+//   .join('');
+// }
+
+// console.log(checkContent("mitgroup", "gmtiprou"));
+// console.log(checkContent("hello", "olleh"));      
+// console.log(checkContent("abc", "abd")); 
+// console.log(checkContent("abdukodir", "ridokudba"));        
 
 
 

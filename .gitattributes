@@ -1,5 +1,25 @@
-* text=auto eol=lf
-*.js   text eol=lf
-*.ejs  text eol=lf
-*.json text eol=lf
-*.md   text eol=lf
+# text files — normalize to LF in repo
+* text=auto
+
+# explicitly handle common text files
+*.js     text
+*.json   text
+*.html   text
+*.css    text
+*.md     text
+*.yml    text
+*.yaml   text
+*.sh     text
+*.py     text
+*.java   text
+
+# keep windows binaries untouched
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.zip    binary
+*.exe    binary
+
+# ensure CRLF is preserved for .bat files (if you need)
+*.bat    text eol=crlf
