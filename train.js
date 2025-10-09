@@ -1,11 +1,21 @@
-// TASK E
-function reverseString(a) {
-  return a.split("").reverse().join("");
+// TASK F
+function findDoublers(str) {
+  return new Set(str).size !== str.length;
 }
 
-console.log(reverseString("hello")); 
-console.log(reverseString("ridokudba")); 
+console.log(findDoublers("hello"));
+console.log(findDoublers("abc"));
+console.log(findDoublers("abdukodir"));
+console.log(findDoublers("sheraliev"));
+console.log(findDoublers("MIT-34"));
 
+// TASK E
+// function reverseString(a) {
+//   return a.split("").reverse().join("");
+// }
+
+// console.log(reverseString("hello"));
+// console.log(reverseString("ridokudba"));
 
 // Task D:
 // function checkContent(a, b) {
@@ -18,23 +28,19 @@ console.log(reverseString("ridokudba"));
 // }
 
 // console.log(checkContent("mitgroup", "gmtiprou"));
-// console.log(checkContent("hello", "olleh"));      
-// console.log(checkContent("abc", "abd")); 
-// console.log(checkContent("abdukodir", "ridokudba"));        
-
-
-
+// console.log(checkContent("hello", "olleh"));
+// console.log(checkContent("abc", "abd"));
+// console.log(checkContent("abdukodir", "ridokudba"));
 
 // TASK C:
 // function checkContent(a, b) {
-//   return a.toLowerCase().split("").sort().join("") === 
+//   return a.toLowerCase().split("").sort().join("") ===
 //          b.toLowerCase().split("").sort().join("");
 // }
 
-// console.log(checkContent("alex", "elax")); 
+// console.log(checkContent("alex", "elax"));
 // console.log(checkContent("mit", "imt"));
 // console.log(checkContent("group", "rtsgd"));
-
 
 // Task - B
 // DEFINE
@@ -59,8 +65,6 @@ qoldiqliBolish(7, 5, (err, data) => {
 });
 */
 
-
-
 // Task - A:
 
 // function countLetter(letter, word) {
@@ -80,19 +84,12 @@ qoldiqliBolish(7, 5, (err, data) => {
 //   return count;
 // }
 
-
 // console.log(countLetter("e", "korea"));
 // console.log(countLetter("j", "jeonju"));
 // console.log(countLetter("a", "asaka"));
-// console.log(countLetter("e", "steve")); 
+// console.log(countLetter("e", "steve"));
 // console.log(countLetter("s", "MIT"));
 // console.log(countLetter("d", "abdukodir"));
-
-
-
-
-
-
 
 // console.log("Jack Ma maslaxatlari");
 // const list = [
@@ -119,7 +116,7 @@ qoldiqliBolish(7, 5, (err, data) => {
 // }
 
 // console.log("passed here 0");
-// maslahatBering(65, (err, data) => {  
+// maslahatBering(65, (err, data) => {
 //     if (err) console.log("ERROR:", err);
 //     else {
 //         console.log("javob:", data);
