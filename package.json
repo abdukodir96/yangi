@@ -1,7 +1,7 @@
 {
   "name": "reja",
   "version": "1.0.0",
-  "description": "bu bizning bitinchi loyihamiz",
+  "description": "bu bizning birinchi loyihamiz",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
